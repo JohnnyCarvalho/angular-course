@@ -23,7 +23,7 @@ export class NgOnChancesComponent implements OnInit, OnChanges {
 
   ngOnChanges(): void{
 
-    alert('component successfully changed!')
+    //alert('component successfully changed!')
     console.log('component successfully changed');
     
 
