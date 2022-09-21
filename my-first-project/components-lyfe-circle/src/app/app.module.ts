@@ -7,6 +7,7 @@ import { TitleComponent } from './components/title/title.component';
 import { NgOnInitComponent } from './components/ng-on-init/ng-on-init.component';
 import { NgOnChancesComponent } from './components/ng-on-chances/ng-on-chances.component';
 import { NgDoChackAndPlusComponent } from './components/ng-do-chack-and-plus/ng-do-chack-and-plus.component';
+import { NgDetroyComponent } from './components/ng-detroy/ng-detroy.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NgDoChackAndPlusComponent } from './components/ng-do-chack-and-plus/ng-
     NgOnInitComponent,
     NgOnChancesComponent,
     NgDoChackAndPlusComponent,
+    NgDetroyComponent,
   ],
   imports: [
     BrowserModule,
