@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './components/title/title.component';
 import { NgOnInitComponent } from './components/ng-on-init/ng-on-init.component';
 import { NgOnChancesComponent } from './components/ng-on-chances/ng-on-chances.component';
+import { NgDoChackAndPlusComponent } from './components/ng-do-chack-and-plus/ng-do-chack-and-plus.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NgOnChancesComponent } from './components/ng-on-chances/ng-on-chances.c
     TitleComponent,
     NgOnInitComponent,
     NgOnChancesComponent,
+    NgDoChackAndPlusComponent,
   ],
   imports: [
     BrowserModule,
