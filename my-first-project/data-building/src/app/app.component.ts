@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
   <app-interpolation></app-interpolation>
   <app-property-binding></app-property-binding>
+  <app-event-binding></app-event-binding>
   <router-outlet></router-outlet>
   `,
 })

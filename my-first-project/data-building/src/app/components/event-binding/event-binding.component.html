@@ -1,0 +1,24 @@
+<h1>Event Binding</h1>
+
+<p>
+    * A associação de eventos permite ouvir e responder às ações do usuário,<br>
+    * como pressionamentos de tecla, movimentos do mouse, cliques e toques.
+</p>
+
+<li>
+    No exemplo a seguir veremos uma interação, onde ao clicar em um botão, um determinado evendo é disparado.
+</li> <br>
+
+<button (click)="somar()" > Somar +1 </button>
+<button (click)="diminuir()" *ngIf="buttonDisable"> Diminuir -1 </button> <br>
+<br>
+
+<li>
+    No exemplo a seguir veremos que ao passar o mouse em cima da imagem eventos acontecem, isso é efeito do mousemove, 
+    isso é muito legal, pois nos da o poder de fazer com que o usuário interaja com uma determinada imagem em um site
+    disparando eventos, por exemplo, fazendo a imagem se meche entre muitas outras coisas.
+</li>
+
+<div (mousemove)="mouseMoveTeste($event)"></div>
+{{ position.x }} - {{ position.y }}
+

@@ -14,24 +14,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  public buttonSoma: boolean = false;
-  public buttonSubtrai: boolean = false;
-  public numero: number = 0;
-
-  constructor() { }
-
-  public somar = () => {
-    this.buttonSoma = true;
-    this.numero =+ 1;
-    console.log(this.numero);
-    
-  }
-
-  public diminuir = () => {
-    this.buttonSubtrai = true;
-    this.numero -= 1;
-    console.log(this.numero);
-  }
+  public checkedDisable: boolean = false;
+  public imgSrc: string = 'https://img.portalgsti.com.br/9YEHBE1HnJlTShyyT-OmbFHD_7Q=/200x200/https://www.portalgsti.com.br/media/uploads/community/2016/04/25/angularjs.png'
 
   ngOnInit(): void { }
 
