@@ -1,5 +1,5 @@
 /**
- * Este evento avisa quando um componente é destrído, na verdade ele verifica se foi destrído
+ * Este evento avisa quando um componente é destrído, na verdade ele verifica se foi destrído, más
  * neste caso ele vai avisar por que colocamos um console.log para isso.
  */
 
