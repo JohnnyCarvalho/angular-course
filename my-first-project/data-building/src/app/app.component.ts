@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   <app-interpolation></app-interpolation>
   <app-property-binding></app-property-binding>
   <app-event-binding></app-event-binding>
+  <app-two-way-binding></app-two-way-binding>
   <router-outlet></router-outlet>
   `,
 })

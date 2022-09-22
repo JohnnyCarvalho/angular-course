@@ -4,6 +4,9 @@
  */
 
 
+
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -34,7 +37,7 @@ export class EventBindingComponent implements OnInit {
     console.log(this.numero);
   }
 
-  public mouseMoveTeste(valor: MouseEvent) {
+  public mouseMoveTeste (valor: MouseEvent) {
     this.position.x = valor.offsetX;
     this.position.y = valor.offsetY;
     
