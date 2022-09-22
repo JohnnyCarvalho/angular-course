@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <app-interpolation></app-interpolation>
+  <app-property-binding></app-property-binding>
   <router-outlet></router-outlet>
   `,
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'data-building';
