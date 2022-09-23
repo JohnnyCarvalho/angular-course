@@ -26,7 +26,7 @@ export class NgIfComponent implements OnInit {
     if (this.click) {
       this.click = false;
     } else {
-      this.click = true;
+      this.click = true 
     }
   }
 

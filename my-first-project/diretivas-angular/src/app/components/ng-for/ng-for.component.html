@@ -1,0 +1,22 @@
+<h1>NgFor</h1>
+
+<p>
+    Uma diretiva estrutural que renderiza um modelo para cada item em uma coleção. A diretiva é colocada em um elemento, <br>
+    que se torna o pai dos modelos clonados.
+    <a href="https://angular.io/api/common/NgFor" target="_blank">Documentação ngFor</a>
+</p>
+
+<ul>
+    <!-- no exemplo abaixo pessoa é um objeto criado para acessar a list de objetos do ng-for.componente.ts -->
+    <li *ngFor="let pessoa of list; let i = index;" (click)="deleteUser(i)">
+        [{{i+1}}º] - {{ pessoa.nome }} - idade = {{ pessoa.idade }}
+    </li>
+</ul>
+
+<button (click)="addPessoa()">ADD</button>
+
+<p>
+    No exemplo acima nós criamos primeiro uma lista de pessoas e idades, em seguida criamos um botão que adiciona mais pessoas <br>
+    a esta lista, e por último criamos um enento que ao clicar em cima de qualquer pessoa, esta será excluida da lista, <br>
+    tudo isso graças a interpolação entre o HTML e o arquivo TS e também a diretiva estrutural *ngFor.
+</p>

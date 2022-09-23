@@ -23,6 +23,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <app-ng-if></app-ng-if>
+  <app-ng-for></app-ng-for>
   <router-outlet></router-outlet>
   `
 })
