@@ -1,0 +1,17 @@
+<h1>
+    <li>
+        ngStyles
+    </li>
+</h1>
+
+<p>
+    Uma diretiva de atributo que atualiza estilos para o elemento HTML contido. Define uma ou mais propriedades de estilo, <br> 
+    especificadas como pares de valores-chave separados por dois pontos. A chave é um nome de estilo, com um sufixo opcional . <br>
+    unit(como 'top.px', 'font-style.em'). O valor é uma expressão a ser avaliada. O valor não nulo resultante, expresso na unidade <br> 
+    fornecida, é atribuído à propriedade de estilo fornecida. Se o resultado da avaliação for nulo, o estilo correspondente será removido. <br>
+    <a href="https://angular.io/api/common/NgStyle" target="_blank">Documentação ngStyle</a>
+</p>
+
+<p [ngStyle]="{'height': heigthPx, 'background': backgroundColor, 'color': colorText}">
+<b>NgClass</b> 
+</p>
