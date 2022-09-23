@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgClassComponent implements OnInit {
 
+  public condition: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    setInterval( () => {
+      if (this.condition) {
+        this.condition = false;
+      } else {
+        this.condition = true;
+      }
+    }, 2000) 
   }
 
 }
