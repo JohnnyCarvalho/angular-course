@@ -1,2 +1,3 @@
 # angular-course
-This is a complete 35h Angular course.
+
+Este projeto se faz referência ao curso para aprendizado em Angular com TS
