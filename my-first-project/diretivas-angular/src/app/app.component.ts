@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
   <app-ng-if></app-ng-if>
   <app-ng-for></app-ng-for>
   <app-ng-switch></app-ng-switch>
+  <app-ng-class></app-ng-class>
   <router-outlet></router-outlet>
   `
 })
