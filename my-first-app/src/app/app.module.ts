@@ -20,3 +20,10 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/**
+ * git branch -m mestre principal
+git busca origem
+git branch -u origin/master master
+git remote set-head origin
+ */
