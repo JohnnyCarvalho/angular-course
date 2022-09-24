@@ -2,6 +2,8 @@
  * teste connection
  * 
  * teste 2
+ * 
+ * teste 3
  */
 
 import { NgModule } from '@angular/core';
@@ -21,9 +23,3 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 
-/**
- * git branch -m mestre principal
-git busca origem
-git branch -u origin/master master
-git remote set-head origin
- */
