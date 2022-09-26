@@ -9,6 +9,7 @@ import { NgForComponent } from './components/diretivas-estruturais/ng-for/ng-for
 import { NgSwitchComponent } from './components/diretivas-estruturais/ng-switch/ng-switch.component';
 import { NgClassComponent } from './components/diretivas-de-atributos/ng-class/ng-class.component';
 import { NgStyleComponent } from './components/diretivas-de-atributos/ng-style/ng-style.component';
+import { NgModelComponent } from './components/diretivas-de-atributos/ng-model/ng-model.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NgStyleComponent } from './components/diretivas-de-atributos/ng-style/n
     NgForComponent,
     NgSwitchComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgModelComponent,
   ],
   imports: [
     BrowserModule,

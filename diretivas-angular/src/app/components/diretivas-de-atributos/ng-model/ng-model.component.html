@@ -1,0 +1,28 @@
+
+<h1>
+    <li>
+        ngModel
+    </li>
+</h1>
+
+<p>
+    Cria uma FormControlinstância de um modelo de domínio e a vincula a um elemento de controle de formulário. <br>
+    <a href="https://angular.io/api/forms/NgModel#description" target="_blank" >Documentação ngModel</a>
+</p>
+
+<p>
+    Digite um nome para inserir na lista!
+</p>
+
+
+<input type="text" [(ngModel)]="nome">
+
+<button (click)="insert()">Adicionar!</button>
+
+<ul>
+    <!-- no exemplo abaixo pessoa é um objeto criado para acessar a list de objetos do ng-for.componente.ts -->
+    <li *ngFor="let pessoa of list; let i = index;" (click)="delete(i)">
+        [{{i+1}}º] - {{ pessoa.nome }}
+    </li>
+</ul>
+
