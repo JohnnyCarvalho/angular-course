@@ -8,6 +8,9 @@ import { SubModulesComponentComponent } from './sub-modules-component/sub-module
   declarations: [
     SubModulesComponentComponent
   ],
+  exports: [
+    SubModulesComponentComponent
+  ],
   imports: [
     CommonModule
   ]
