@@ -12,6 +12,7 @@ import { NgStyleComponent } from './components/diretivas-de-atributos/ng-style/n
 import { NgModelComponent } from './components/diretivas-de-atributos/ng-model/ng-model.component';
 import { NgTemplateComponent } from './components/diretivas-de-atributos/ng-template/ng-template.component';
 import { NgContentComponent } from './components/diretivas-de-atributos/ng-content/ng-content.component';
+import { PipeComponent } from './components/pipe/pipe.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NgContentComponent } from './components/diretivas-de-atributos/ng-conte
     NgModelComponent,
     NgTemplateComponent,
     NgContentComponent,
+    PipeComponent,
   ],
   imports: [
     BrowserModule,

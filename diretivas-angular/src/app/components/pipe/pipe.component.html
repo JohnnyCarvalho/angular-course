@@ -1,0 +1,27 @@
+<h1>
+    <li>
+        Pipe
+    </li>
+</h1>
+
+<p>
+    O pipe permite nós atualizar o formado de determinado evendo ou variável, vejamos os exemplos a seguir:
+    <a href="https://angular.io/api/core/Pipe" target="_blank" >Documentação pipe</a>
+</p>
+
+
+<input type="text" [(ngModel)]="name" placeholder="Digite um nome">
+<button (click)="insert()">Adicionar</button>
+
+<li *ngFor="let pessoa of list, let i = index;" (click)="delete(i)" >
+    [{{i+1}}º] - {{ pessoa.name | uppercase }}
+</li>
+
+<p>
+    Se fossemos chamar uma data a partir da biblioteca Date do TS, ficaria desta forma: <br>
+    {{ date }} <br>
+    Utilizando o pipe podemos atribuir valor e determinar para a variável oque queremos que apareá na tela, <br>
+    por exemplo, utilizando o pipe | date: 'dd/MM/yyy' a data aparece da seguinte forma: <br>
+    {{ date | date: 'dd/MM/yyy'}}
+
+</p>

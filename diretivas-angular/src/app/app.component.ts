@@ -32,6 +32,7 @@ import { Component } from '@angular/core';
   <app-ng-content> 
     <h1>Hi, i am a ng-content!</h1>
   </app-ng-content>
+  <app-pipe></app-pipe>
   <router-outlet></router-outlet>
   `
 })
