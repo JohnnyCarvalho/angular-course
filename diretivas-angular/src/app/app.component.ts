@@ -28,6 +28,7 @@ import { Component } from '@angular/core';
   <app-ng-class></app-ng-class>
   <app-ng-style></app-ng-style>
   <app-ng-model></app-ng-model>
+  <app-ng-template></app-ng-template>
   <router-outlet></router-outlet>
   `
 })

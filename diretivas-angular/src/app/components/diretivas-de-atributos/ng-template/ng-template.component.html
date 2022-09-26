@@ -1,0 +1,33 @@
+<h1>
+    <li>
+        ngTemplate
+    </li>
+</h1>
+
+<p>
+    O elemento do Angular ng-template define um template que não é renderizado por padrão. <br>
+    Observe que se você envolver o conteúdo dentro de um ng-template sem instruir o Angular para renderizá-lo, <br>
+    esse conteúdo não aparecerá em uma página. <br>
+    <a href="https://angular.io/api/core/ng-template" target="_blank">Documentação ngTemplate</a>
+</p>
+
+<p>
+    Vamos usar um exemplo simples para praticar e entender. Por exemplo, veja o código HTML a seguir, <br> 
+    ao manuseá-lo, o Angular não renderizará o meio "Hip!" na frase "Hip! Hip! Hooray!" por causa do entorno ng-template.
+</p>
+
+<p>Hip!</p>
+<ng-template>
+  <p>Hip!</p>
+</ng-template>
+<p>Hooray!</p>
+
+<ng-template ngFor let-list [ngForOf]="list">
+<p>
+    Aqui está um valor com o ng-template mostrado através de um ngFor de uma lista <br>
+
+    list.nome = {{list.nome}}
+</p>
+</ng-template>
+
+<hr>
