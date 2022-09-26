@@ -11,6 +11,7 @@ import { NgClassComponent } from './components/diretivas-de-atributos/ng-class/n
 import { NgStyleComponent } from './components/diretivas-de-atributos/ng-style/ng-style.component';
 import { NgModelComponent } from './components/diretivas-de-atributos/ng-model/ng-model.component';
 import { NgTemplateComponent } from './components/diretivas-de-atributos/ng-template/ng-template.component';
+import { NgContentComponent } from './components/diretivas-de-atributos/ng-content/ng-content.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { NgTemplateComponent } from './components/diretivas-de-atributos/ng-temp
     NgStyleComponent,
     NgModelComponent,
     NgTemplateComponent,
+    NgContentComponent,
   ],
   imports: [
     BrowserModule,

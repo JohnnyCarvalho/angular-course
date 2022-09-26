@@ -29,6 +29,9 @@ import { Component } from '@angular/core';
   <app-ng-style></app-ng-style>
   <app-ng-model></app-ng-model>
   <app-ng-template></app-ng-template>
+  <app-ng-content> 
+    <h1>Hi, i am a ng-content!</h1>
+  </app-ng-content>
   <router-outlet></router-outlet>
   `
 })
