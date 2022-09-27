@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
+import { OutputComponent } from './output/output.component';
 
 
 
@@ -8,9 +9,11 @@ import { InputComponent } from './input/input.component';
 @NgModule({
   declarations: [
     InputComponent,
+    OutputComponent,
   ],
   exports: [
     InputComponent,
+    OutputComponent
   ],
   imports: [
     CommonModule

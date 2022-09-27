@@ -5,12 +5,21 @@ import { Component } from '@angular/core';
   template: `
   <app-input [contador]="numero"></app-input>
   <button (click)="insert()">Insert</button>
+  <hr>
+
+  <ng-template [ngIf]="getDados">
+    <h1>{{ getDados.nome }}</h1>
+    <h2>{{ getDados.idade }}</h2>
+  </ng-template>
+  <app-output (enviarDados)="setDados($event)"></app-output>
   <router-outlet></router-outlet>`
 })
 
 export class AppComponent {
   public numero: number = 0;
   public destroi: boolean = true;
+
+  public getDados: {nome: string, idade: number} | undefined;
 
   constructor() { }
 
@@ -23,5 +32,9 @@ export class AppComponent {
 
   public destruir = () => {
     this.destroi = false;
+  }
+
+  public setDados(event: {nome: string, idade: number}) {
+    this.getDados = event;
   }
 }

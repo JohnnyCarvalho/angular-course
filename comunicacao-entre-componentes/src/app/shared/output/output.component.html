@@ -1,0 +1,17 @@
+<h1>
+    <li>
+        @Output
+    </li>
+</h1>
+
+<p>
+    Decorador que marca um campo de classe como uma propriedade de saída e fornece metadados de configuração. <br>
+    A propriedade DOM vinculada à propriedade de saída é atualizada automaticamente durante a detecção de alterações. <br>
+    <a href="https://angular.io/api/core/Output" target="_blank" >Documentação @Output</a>
+</p>
+
+<p *ngFor="let pessoa of list; let i = index">
+    <input type="checkbox">{{ pessoa.nome }} = {{ pessoa.idade }} <br>
+    <button (click)="getDados(i)">Enviar Dados</button>
+</p>
+
