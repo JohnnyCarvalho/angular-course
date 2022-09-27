@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   <app-input [contador]="numero"></app-input>
-<button (click)="insert()">Insert</button>
+  <button (click)="insert()">Insert</button>
   <router-outlet></router-outlet>`
 })
 
