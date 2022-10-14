@@ -27,7 +27,7 @@ export class ToDoListComponent implements OnInit {
   public deleteAll = () => {
     const confirm = window.confirm('Do you want to delete all?')
 
-    if (confirm == true) {
+    if (confirm === true) {
       this.taskList = [];
     }
   }
