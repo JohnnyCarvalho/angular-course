@@ -1,6 +1,9 @@
 //teste commit
 
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { TaskList } from 'src/app/interfaces/task-list';
+import { TaskServiceService } from 'src/app/services/task-service.service';
+import { ToDoListComponent } from '../to-do-list/to-do-list.component';
 
 @Component({
   selector: 'app-to-do-input-add-itens',
@@ -14,17 +17,32 @@ export class ToDoInputAddItensComponent implements OnInit {
 
   public addItemTaskList!: string;
 
-  constructor() { }
+  constructor(
+    private taskService: TaskServiceService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  public submmuiTaskList() {
-    console.log(this.addItemTaskList);
+  public submmitTaskList() {
 
-    //Limpa o campo de digitação após o envio do dado digitado
+    this.addItemTaskList = this.addItemTaskList.trim();
+
     if (this.addItemTaskList) {
-      this.addItemTaskList = ''
+      
+      let itemTaskList: ToDoListComponent = new ToDoListComponent()
+
+      let task: TaskList
+
+      this.emmitItemTaskList.emit(this.addItemTaskList);
+      this.addItemTaskList = ""
+
+      this.taskService.inputTastDataBase(itemTaskList.taskList)
+       .subscribe(
+        (resposta) => {
+          this.addItemTaskList = resposta
+        }
+       )
     }
   }
 }

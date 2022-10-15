@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { ToDoListComponent } from './modules/components/to-do-list/to-do-list.co
 import { HomeModule } from './modules/home/home.module';
 
 //Page
-import { HomeComponent } from './modules/pages/home/home.component';
+import { HomeComponent } from './modules/components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { HomeComponent } from './modules/pages/home/home.component';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
