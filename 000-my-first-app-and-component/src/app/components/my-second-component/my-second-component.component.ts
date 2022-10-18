@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MySecondComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+  }
+
+  public sum(n1: number, n2: number): Number{
+
+    const sum = (n1 + n2)
+
+    return sum
+
   }
 
 }
