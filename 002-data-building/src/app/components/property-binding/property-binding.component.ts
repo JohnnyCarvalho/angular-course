@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  public checkedDisable: boolean = false;
+  public checkedDisable: boolean = true;
   public imgSrc: string = 'https://img.portalgsti.com.br/9YEHBE1HnJlTShyyT-OmbFHD_7Q=/200x200/https://www.portalgsti.com.br/media/uploads/community/2016/04/25/angularjs.png'
 
   ngOnInit(): void { }
