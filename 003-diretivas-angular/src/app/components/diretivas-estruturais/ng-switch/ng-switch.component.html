@@ -19,12 +19,12 @@
 
 <div [ngSwitch]="name">
 
-    <p *ngSwitchCase=" 'Johnny' ">
-        Nome está correto, o nome é {{ name }}
+    <p *ngSwitchCase=" 'Johnny' " style="color: green;">
+        <b>Nome está correto, o nome é {{ name }}</b>
     </p>
 
-    <p *ngSwitchCase=" 'Bruna' ">
-        Nome está correto, o nome é Bruna
+    <p *ngSwitchCase=" 'Bruna' " style="color: green;">
+        <b>Nome está correto, o nome é Bruna</b>
     </p>
 
     <div id="error">
